@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Work+Sans&display=swap');
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.my-font{
+  font-family: 'Work Sans', sans-serif;
+}
+.Staatliches{
+  font-family: 'Staatliches', sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.user-input-bg{
+  width: 100%;
+ 
+  padding: 15px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.user-input-warrper{
+  display: flex;
+
+  border-radius: 20px;
+  width: 70%;
+  background-color: #2e373b;
+  height: 100%;
+  align-items: flex-end;
+  padding: 5px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  
+}
+
+.bot-input-bg{
+  width: 100%;
+  background-color: transparent;
+  flex-wrap: wrap;
+  padding: 10px;
+  height: fit-content;
+  
+  display: flex;
+  justify-content: center;
+}
+.bot-input-warrper{
+  display: block;
+  width: 70%;
+  background-color: transparent;
+  height: 100%;
+  padding: 5px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  text-wrap: wrap;
+}
+
+.bot-input-warrper:last-child{
+  margin-bottom: 20px;
+}
