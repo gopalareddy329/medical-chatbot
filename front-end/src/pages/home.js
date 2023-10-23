@@ -30,15 +30,17 @@ const Home = () => {
             </div>
             <div className='flex w-full justify-center '>
               <div className='flex  gap-[6vw]  my-font text-[16px] justify-between max-w-[1500px] w-[70%]     max-md:flex-col max-md:gap-0'>
-                  <div className='max-w-[600px] p-8 ' >
-                          <p>
-                          Imagine having a medical expert at your fingertips, 24 hours a day, 7 days a week. That's what a medical chatbot can offer. Medical chatbots are AI-powered tools that can answer your questions about health, symptoms, and treatments. They can also provide you with personalized recommendations and support.
-                          </p>
-                  </div>
-                  <div className='max-w-[600px] max-md:mt-10 p-8'>
-                          <p>
-                          Medical chatbots can be used on a variety of devices, including smartphones, tablets, and computers. This makes them accessible to people with disabilities and people who live in remote areas.
-                          </p>
+                  <div className='grid md:grid-cols-2 gap-4'>
+                    <div className=' md:p-4 ' >
+                            <p>
+                            Imagine having a medical expert at your fingertips, 24 hours a day, 7 days a week. That's what a medical chatbot can offer. Medical chatbots are AI-powered tools that can answer your questions about health, symptoms, and treatments. They can also provide you with personalized recommendations and support.
+                            </p>
+                    </div>
+                    <div className=' max-md:mt-10 md:p-4'>
+                            <p>
+                            Medical chatbots can be used on a variety of devices, including smartphones, tablets, and computers. This makes them accessible to people with disabilities and people who live in remote areas.
+                            </p>
+                    </div>
                   </div>
               </div>
             </div>
