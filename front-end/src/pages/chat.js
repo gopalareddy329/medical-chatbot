@@ -93,7 +93,7 @@ const Chat = () => {
                                 </div>
                             
                                 )}
-                                {loading && <div className='bot-input-bg'><div className='bot-input-warrper'><AiOutlineLoading3Quarters size={20} className='loading-spinner text-[#00A6FB]' /></div></div>}
+                                {loading && <div className='flex justify-center'><li className='text-white text-[15px] floating dot1'/><li className='text-green-500 text-[15px] floating dot2'/><li className='text-yellow-500 text-[15px] floating dot3'/></div>}
                     </div>
                         
                     </div>
@@ -103,7 +103,7 @@ const Chat = () => {
                     <div className=" fixed bottom-5 w-full">
                                     <div className="flex justify-center ">
                                                 <form onSubmit={handelSubmit} method='post' className='relative'>
-                                                    <textarea  name='userquerry' id="userquerry" className="min-w-[450px] max-w-[500px] w-[45vw]  bg-[#1e2f36] text-white flex p-3 outline-none border-none justify-center max-h-[350px] pr-[10%] break-all"  style={{ height: inputHeight ,resize: "none"}} placeholder="Type your message..." value={message} onChange={handleInputChange} resize="none"/>
+                                                    <textarea  name='userquerry' id="userquerry" className="min-w-[450px] max-w-[500px] w-[45vw]  bg-[#1e2f36] text-white flex p-3 outline-none border-none justify-center max-h-[350px] pr-[10%] break-all"  style={{ height: inputHeight ,resize: "none"}} placeholder="Type your message..." value={message} onChange={handleInputChange} resize="none" required/>
                                                     
                                                     <button type='submit' className='absolute bottom-[1%] bg-[#477590] p-1 rounded-lg m-2 right-0 text-white ' ><IoSend size={30}/></button>
                                                 </form>        

@@ -25,18 +25,18 @@ const Home = () => {
       <div className='h-fit text-white   bg-[#003554] min-h-[800px] p-[70px] mt-20 Staatliches '>
         
         <div className=' flex flex-col  gap-[40px]  '>
-            <div className='w-full ml-[10%]'>
+            <div className='w-full md:ml-[10%]'>
               <h2 className='text-[48px] font-bold'>Explore</h2>
             </div>
             <div className='flex w-full justify-center '>
-              <div className='flex  gap-[6vw]  my-font text-[16px] justify-between max-w-[1500px] w-[70%]     max-md:flex-col max-md:gap-0'>
+              <div className='flex  gap-[6vw]  my-font text-[16px] justify-between max-w-[1500px] md:w-[80%]     max-md:flex-col max-md:gap-0'>
                   <div className='grid md:grid-cols-2 gap-4'>
-                    <div className=' md:p-4 ' >
+                    <div className='  ' >
                             <p>
                             Imagine having a medical expert at your fingertips, 24 hours a day, 7 days a week. That's what a medical chatbot can offer. Medical chatbots are AI-powered tools that can answer your questions about health, symptoms, and treatments. They can also provide you with personalized recommendations and support.
                             </p>
                     </div>
-                    <div className=' max-md:mt-10 md:p-4'>
+                    <div className=' max-md:mt-10 '>
                             <p>
                             Medical chatbots can be used on a variety of devices, including smartphones, tablets, and computers. This makes them accessible to people with disabilities and people who live in remote areas.
                             </p>
@@ -50,7 +50,7 @@ const Home = () => {
         </div>
 
 
-          <div className='mt-[10%] gap-5 text-[#00A6FB]  p-5 flex items-center justify-center max-md:flex-col'>
+          <div className='mt-[10%] gap-5 text-[#00A6FB]  md:p-5 flex items-center justify-center max-md:flex-col'>
               <div className='flex justify-center'>
                 <img className='object-contain w-[70%] rounded-xl aspect-[4/3] min-w-[300px] float-right' src='https://etimg.etb2bimg.com/photo/99989510.cms' alt='home-image1' />
               </div>
@@ -90,7 +90,7 @@ const Home = () => {
                     <AiFillGithub size={40}/>
                     <AiFillLinkedin size={40}/>
                   </div>
-                  <h2 className=' text-[16px] max-md:text-[40px] '>© 2023 Chat Haven. All rights reserved.</h2>
+                  <h2 className=' text-[16px]  '>© 2023 Chat Haven. All rights reserved.</h2>
                   <p className='my-font text-[16px] max-w-[500px] opacity-[0.5]'>Created on October 15, 2023</p>
                  
           

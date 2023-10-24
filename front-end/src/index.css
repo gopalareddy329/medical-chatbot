@@ -92,3 +92,29 @@ code {
   
   animation: spinner 1.5s linear infinite;
 }
+@keyframes App-logo-spin {
+  0%,100% {
+   transform:translateY(0);
+  }
+  50% {
+    transform:translateY(-10px);
+  }
+}
+
+.floating{
+  animation: App-logo-spin 1s infinite ease-in-out ;
+  margin: 0;
+  
+}
+
+.dot1{
+  animation-delay: 0s;
+}
+
+.dot2{
+  animation-delay: 0.2s;
+  
+}
+.dot3{
+  animation-delay: 0.4s;
+}
