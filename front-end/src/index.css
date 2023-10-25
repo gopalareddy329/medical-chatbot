@@ -35,7 +35,7 @@ code {
   display: flex;
 
   border-radius: 20px;
-  width: 70%;
+
   background-color: #2e373b;
   height: 100%;
   align-items: flex-end;
@@ -57,10 +57,10 @@ code {
 }
 .bot-input-warrper{
   display: block;
-  width: 70%;
+  
   background-color: transparent;
   height: 100%;
-  padding: 5px;
+  
   color: white;
   font-family: 'Work Sans', sans-serif;
   text-wrap: wrap;
