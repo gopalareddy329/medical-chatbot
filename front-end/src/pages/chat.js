@@ -44,10 +44,13 @@ const Chat = () => {
     const fetchResponse = async () =>{
         updateLoding(true)
         try{
-        await fetch(`https://dummyjson.com/products/${userMessages.length}`).then(res => res.json()).then(item=>setBotMessages([...BotMessages,item]));
+          var url=`http://127.0.0.1:8000/api/getres/?question=${encodeURIComponent(event.target.elements.userquerry.value)}&id=${encodeURIComponent(userMessages.length +1)}`;
+          await fetch(url).then(response => response.json()).then(data => {setBotMessages([...BotMessages,data])}).catch(error => console.error(error));
+
         }
         catch{
-          setBotMessages([...BotMessages,{"images":"unable to load"}])
+          setBotMessages([...BotMessages,{"name":"unable to load"}])
+
           
         }
        
@@ -85,7 +88,7 @@ const Chat = () => {
                                     {<div className='bot-input-bg bg-transparent '>
                                         <div className='bot-input-warrper w-[90%] md:w-[70%] '>
                                         
-                                                {BotMessages[key]!=null && <p className=' break-all'>{BotMessages[key].images}</p>}
+                                                {BotMessages[key]!=null && <p className=' break-all'>{BotMessages[key].name}</p>}
                                         </div>
                                     </div>}
                                     
@@ -103,7 +106,7 @@ const Chat = () => {
                     <div className=" fixed bottom-5 w-full">
                                     <div className="flex justify-center ">
                                                 <form onSubmit={handelSubmit} method='post' className='relative'>
-                                                    <input  name='userquerry' id="userquerry" className="max-md:w-[350px] md:w-[450px] lg:w-[600px]  bg-[#1e2f36] text-white flex p-3 outline-none border-none justify-center max-h-[350px] pr-[10%]"  placeholder="Type your message..." value={message} onChange={handleInputChange}  required/>
+                                                    <input  name='userquerry' id="userquerry" className="max-md:w-[350px] md:w-[450px] lg:w-[600px]  bg-[#1e2f36] text-white flex p-3 outline-none border-none justify-center max-h-[350px] pr-[10%]"  placeholder="Type your message..." value={message} autoComplete='off' onChange={handleInputChange}  required/>
                                                     
                                                     {!loading && <button type='submit' className='absolute bottom-[1%] pointer  bg-[#477590] p-1 rounded-lg m-2 right-0 text-white ' ><IoSend size={30}/></button>}
                                                     {loading && <div  className='absolute bottom-[1%] bg-[#477590]  p-1 rounded-lg m-2 right-0 text-white ' ><AiOutlineLoading3Quarters className='loading-spinner' size={30}/></div>}

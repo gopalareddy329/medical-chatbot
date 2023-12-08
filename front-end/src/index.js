@@ -6,9 +6,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Chat from './pages/chat'
 import Contact from './pages/contact';
+import Login from './pages/login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
+  
   <BrowserRouter>
   
     <Routes>
@@ -17,6 +20,7 @@ root.render(
     
         <Route  path='/chat' element={<Chat/>}/>
         <Route  path='/contact' element={<Contact/>}/>
+        <Route  path='/login' element={<Login/>}/>
     </Routes>
   </BrowserRouter>
 );
